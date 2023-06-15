@@ -7,7 +7,7 @@ const app = express();
 const PORT = 8001;
 
 app.get("/", function (request, response) {
-    response.send("🙋‍♂️, 🌏 🎊✨🤩 Welcome To backend of Bulk Email Sending Website");
+    response.send("🙋‍♂️, 🌏 🎊✨🤩 Welcome To backend of url shortner");
   });
 
 connectToMongoDB("mongodb://127.0.0.1:27017/short-url").then(() =>
