@@ -6,6 +6,10 @@ const URL = require("./models/utl.js");
 const app = express();
 const PORT = 8001;
 
+app.get("/", function (request, response) {
+    response.send("🙋‍♂️, 🌏 🎊✨🤩 Welcome To backend of Bulk Email Sending Website");
+  });
+
 connectToMongoDB("mongodb://127.0.0.1:27017/short-url").then(() =>
   console.log("Mongodb connected")
 );
